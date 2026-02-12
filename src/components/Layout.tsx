@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { ScrollToTop } from './ScrollToTop';
+import { CookieBanner } from "../components/CookieBanner";
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -12,6 +14,7 @@ export function Layout({ children }: LayoutProps) {
       <Navbar />
       <main className="flex-grow pt-20">{children}</main>
       <Footer />
+      <CookieBanner/>
     </div>);
 
 }
